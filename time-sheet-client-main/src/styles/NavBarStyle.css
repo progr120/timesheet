@@ -1,0 +1,73 @@
+.navbar-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    background-color: var(--bg-primary);
+    box-shadow: 0 2px 4px var(--shadow-color);
+}
+
+.p-menubar {
+    border: none !important;
+    border-radius: 0 !important;
+    padding: 0.5rem 1rem !important;
+    background: var(--menu-bg) !important;
+}
+
+.p-menubar .p-menuitem-link {
+    padding: 0.75rem 1rem !important;
+}
+
+.p-menubar .p-menuitem-icon {
+    margin-right: 0.5rem;
+}
+
+.navbar-container .p-menubar {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.navbar-container .p-menubar-root-list {
+    margin-left: auto;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+@media screen and (max-width: 768px) {
+    .p-menubar-root-list {
+        display: block !important;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: var(--bg-primary);
+        z-index: 1000;
+    }
+
+    .p-menubar-root-list.show {
+        display: block !important;
+    }
+}
+
+.theme-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+    color: var(--text-primary);
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
+}
+
+.theme-toggle i {
+    font-size: 1.2rem;
+}
+
+.p-menubar .p-menuitem-link:hover {
+    background: var(--menu-item-hover) !important;
+}
+
+.p-menubar .p-menuitem-link .p-menuitem-text,
+.p-menubar .p-menuitem-link .p-menuitem-icon {
+    color: var(--text-primary);
+}

@@ -1,0 +1,50 @@
+.register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--bg-secondary);
+}
+
+.register-card {
+    width: 100%;
+    max-width: 400px;
+    padding: 2rem;
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    box-shadow: 0 2px 8px var(--shadow-color);
+}
+
+.field {
+    margin-bottom: 1.5rem;
+}
+
+.p-float-label {
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.p-inputtext, .p-password {
+    width: 100%;
+    background-color: var(--input-bg);
+    color: var(--input-text);
+    border-color: var(--input-border);
+}
+
+.p-button {
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.login-link {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.p-button.p-button-link {
+    color: #2196F3;
+}
+
+.p-float-label label {
+    color: var(--text-secondary);
+}

@@ -1,0 +1,201 @@
+.common-container {
+    background-color: var(--bg-primary);
+    border-radius: 8px;
+    box-shadow: 0 2px 8px var(--shadow-color);
+    padding: 2rem;
+    margin: 1rem;
+    min-height: calc(100vh - 100px);
+    width: 100%;
+}
+
+.common-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--border-color);
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.common-header h1 {
+    font-size: 1.5rem;
+    color: var(--text-primary);
+    margin: 0;
+    font-weight: 600;
+}
+
+.common-header .p-button-rounded {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.project-form {
+    padding: 1rem;
+}
+
+.project-form .field {
+    margin-bottom: 1.5rem;
+}
+
+.project-form .field label {
+    font-weight: 500;
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.project-form .field input {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 4px;
+}
+
+.action-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.action-buttons .p-button {
+    width: 2rem;
+    height: 2rem;
+}
+
+.p-datatable {
+    margin-top: 1rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.p-datatable .p-datatable-header {
+    background: #f8f9fa;
+    border: 1px solid #dee2e6;
+    padding: 1rem;
+    text-align: left;
+}
+
+.p-datatable .p-datatable-thead>tr>th {
+    background: var(--table-header-bg);
+    color: var(--text-primary);
+    border-color: var(--border-color);
+    font-weight: 600;
+    padding: 1rem;
+}
+
+.p-datatable .p-datatable-tbody>tr {
+    transition: background-color 0.2s;
+}
+
+.p-datatable .p-datatable-tbody>tr:hover {
+    background-color: var(--table-hover-bg);
+}
+
+.p-datatable .p-datatable-tbody>tr>td {
+    padding: 0.8rem 1rem;
+    border-color: var(--border-color);
+    color: var(--text-primary);
+}
+
+@media screen and (max-width: 768px) {
+    .common-container {
+        padding: 1rem;
+        margin: 0.5rem;
+    }
+
+    .common-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .action-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .p-datatable .p-datatable-tbody>tr>td {
+        padding: 0.5rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .common-container {
+        padding: 0.75rem;
+        margin: 0.25rem;
+    }
+
+    .p-datatable .p-datatable-tbody>tr>td {
+        font-size: 0.9rem;
+        padding: 0.3rem;
+    }
+
+    .common-header h1 {
+        font-size: 1.2rem;
+    }
+
+    .action-buttons .p-button {
+        width: 1.8rem;
+        height: 1.8rem;
+    }
+}
+
+.project-form .field label {
+    color: var(--text-primary);
+}
+
+.responsive-table {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.p-datatable {
+    min-width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .p-datatable .p-datatable-tbody>tr>td {
+        padding: 0.5rem;
+    }
+
+    .action-buttons {
+        display: flex;
+        gap: 0.25rem;
+        justify-content: flex-start;
+    }
+
+    .dialog-footer {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .dialog-footer .p-button {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .p-datatable .p-datatable-tbody>tr>td {
+        padding: 0.3rem;
+        font-size: 0.9rem;
+    }
+}
+
+.responsive-form {
+    display: grid;
+    gap: 1rem;
+    width: 100%;
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 100%;
+}
+
+.form-field input,
+.form-field .p-calendar,
+.form-field .p-dropdown {
+    width: 100%;
+}

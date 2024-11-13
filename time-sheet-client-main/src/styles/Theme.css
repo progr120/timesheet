@@ -1,0 +1,216 @@
+:root {
+    /* Light Theme */
+    --bg-primary: #ffffff;
+    --bg-secondary: #f5f5f5;
+    --text-primary: #333333;
+    --text-secondary: #6c757d;
+    --border-color: #dee2e6;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+    --card-bg: #ffffff;
+    --table-header-bg: #f8f9fa;
+    --table-hover-bg: #f8f9fa;
+    --button-text: #ffffff;
+    --input-placeholder: #6c757d;
+    --dropdown-bg: var(--bg-primary);
+    --dropdown-item-hover: var(--hover-bg);
+    --menu-bg: var(--bg-primary);
+    --menu-item-hover: var(--hover-bg);
+}
+
+[data-theme='dark'] {
+    --bg-primary: #1a1a1a;
+    --bg-secondary: #2d2d2d;
+    --text-primary: #ffffff;
+    --text-secondary: #b3b3b3;
+    --border-color: #404040;
+    --shadow-color: rgba(0, 0, 0, 0.3);
+    --card-bg: #2d2d2d;
+    --table-header-bg: #333333;
+    --table-hover-bg: #3a3a3a;
+    --button-text: #ffffff;
+    --input-bg: #333;
+    --input-text: #fff;
+    --card-shadow: rgba(0, 0, 0, 0.5);
+    --hover-bg: #404040;
+    --dialog-bg: #2d2d2d;
+    --dialog-text: #ffffff;
+    --input-placeholder: #999;
+    --dropdown-bg: var(--bg-secondary);
+    --dropdown-item-hover: var(--hover-bg);
+    --menu-bg: var(--bg-secondary);
+    --menu-item-hover: var(--hover-bg);
+    --menuitem-hover: #404040;
+    --list-bg: var(--bg-secondary);
+    --list-item-hover: var(--hover-bg);
+    --list-border: var(--border-color);
+    --input-border: #404040;
+    --input-focus-border: #666;
+    --input-focus-shadow: rgba(255, 255, 255, 0.1);
+}
+
+[data-theme='dark'] .p-inputtext,
+[data-theme='dark'] .p-password input,
+[data-theme='dark'] .p-dropdown {
+    background-color: var(--input-bg);
+    color: var(--input-text);
+}
+
+[data-theme='dark'] .p-card,
+[data-theme='dark'] .p-dialog {
+    background-color: var(--dialog-bg);
+    color: var(--dialog-text);
+}
+
+[data-theme='dark'] .p-dropdown-panel,
+[data-theme='dark'] .p-menu {
+    background: var(--dropdown-bg);
+    border-color: var(--border-color);
+}
+
+[data-theme='dark'] .p-dropdown-item:hover,
+[data-theme='dark'] .p-menuitem:hover {
+    background: var(--dropdown-item-hover);
+}
+
+[data-theme='dark'] .p-inputtext::placeholder {
+    color: var(--input-placeholder);
+}
+
+[data-theme='dark'] .p-menubar,
+[data-theme='dark'] .p-menu,
+[data-theme='dark'] .p-dropdown-panel,
+[data-theme='dark'] .p-datatable {
+    background: var(--bg-primary);
+    color: var(--text-primary);
+    border-color: var(--border-color);
+}
+
+[data-theme='dark'] .p-menuitem-link:hover,
+[data-theme='dark'] .p-dropdown-item:hover,
+[data-theme='dark'] .p-menuitem:hover {
+    background: var(--menuitem-hover) !important;
+}
+
+[data-theme='dark'] .p-dropdown-panel .p-dropdown-items {
+    background: var(--list-bg);
+}
+
+[data-theme='dark'] .p-dropdown-panel .p-dropdown-item {
+    color: var(--text-primary);
+}
+
+[data-theme='dark'] .p-dropdown-panel .p-dropdown-item:hover {
+    background: var(--list-item-hover);
+}
+
+[data-theme='dark'] .p-datatable .p-datatable-tbody > tr {
+    background: var(--bg-primary);
+    color: var(--text-primary);
+}
+
+[data-theme='dark'] .p-dialog {
+    background: var(--dialog-bg);
+    color: var(--dialog-text);
+}
+
+[data-theme='dark'] .p-dialog .p-dialog-header {
+    background: var(--dialog-bg);
+    color: var(--dialog-text);
+}
+
+[data-theme='dark'] .p-dialog .p-dialog-content {
+    background: var(--dialog-bg);
+    color: var(--dialog-text);
+}
+
+[data-theme='dark'] .p-inputtext,
+[data-theme='dark'] .p-password input,
+[data-theme='dark'] .p-inputnumber input,
+[data-theme='dark'] .p-inputmask,
+[data-theme='dark'] .p-textarea,
+[data-theme='dark'] .p-calendar input {
+    background-color: var(--input-bg) !important;
+    color: var(--input-text) !important;
+    border-color: var(--input-border) !important;
+}
+
+[data-theme='dark'] .p-inputtext:enabled:focus,
+[data-theme='dark'] .p-password input:enabled:focus,
+[data-theme='dark'] .p-inputnumber input:enabled:focus,
+[data-theme='dark'] .p-inputmask:enabled:focus,
+[data-theme='dark'] .p-textarea:enabled:focus {
+    border-color: var(--input-focus-border) !important;
+    box-shadow: 0 0 0 1px var(--input-focus-shadow) !important;
+}
+
+[data-theme='dark'] .p-dropdown,
+[data-theme='dark'] .p-multiselect {
+    background-color: var(--input-bg) !important;
+    border-color: var(--input-border) !important;
+}
+
+html, body, #root {
+    background-color: var(--bg-secondary);
+}
+
+* {
+    transition: background-color 0.3s, color 0.3s;
+}
+
+[data-theme='dark'] input,
+[data-theme='dark'] select,
+[data-theme='dark'] textarea {
+    background-color: var(--input-bg) !important;
+    color: var(--input-text) !important;
+}
+
+[data-theme='dark'] .p-component {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+}
+
+[data-theme='dark'] .p-confirm-dialog .p-dialog-content,
+[data-theme='dark'] .p-confirm-dialog .p-dialog-header,
+[data-theme='dark'] .p-confirm-dialog .p-dialog-footer {
+    background-color: var(--dialog-bg) !important;
+    color: var(--dialog-text) !important;
+    border-color: var(--border-color) !important;
+}
+
+[data-theme='dark'] .p-confirm-dialog .p-dialog-footer button {
+    background-color: var(--bg-secondary) !important;
+    color: var(--text-primary) !important;
+    border-color: var(--border-color) !important;
+}
+
+[data-theme='dark'] .p-confirm-dialog .p-dialog-footer button:hover {
+    background-color: var(--hover-bg) !important;
+}
+
+[data-theme='dark'] .p-confirm-dialog .p-dialog-footer .p-button-danger {
+    background-color: #dc3545 !important;
+    color: #ffffff !important;
+}
+
+[data-theme='dark'] .p-confirm-dialog .p-dialog-footer .p-button-danger:hover {
+    background-color: #bb2d3b !important;
+}
+
+[data-theme='dark'] .p-dialog .p-dialog-footer button {
+    background-color: var(--bg-secondary) !important;
+    color: var(--text-primary) !important;
+    border-color: var(--border-color) !important;
+}
+
+[data-theme='dark'] .p-dialog .p-dialog-footer button:hover {
+    background-color: var(--hover-bg) !important;
+}
+
+[data-theme='dark'] .p-dialog .p-dialog-footer .p-button-primary {
+    background-color: #0d6efd !important;
+    color: #ffffff !important;
+}
+
+[data-theme='dark'] .p-dialog .p-dialog-footer .p-button-primary:hover {
+    background-color: #0b5ed7 !important;
+}

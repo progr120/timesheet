@@ -1,0 +1,50 @@
+.login-container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bg-secondary);
+}
+
+.login-card {
+    width: 100%;
+    max-width: 400px;
+    padding: 2rem;
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+}
+
+.field {
+    margin-bottom: 1.5rem;
+}
+
+.p-float-label {
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.p-inputtext,
+.p-password {
+    width: 100%;
+    background-color: var(--input-bg);
+    color: var(--input-text);
+    border-color: var(--border-color);
+}
+
+.p-button {
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.register-link {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.p-button.p-button-link {
+    color: #2196F3;
+}
+
+.p-float-label label {
+    color: var(--text-secondary);
+}

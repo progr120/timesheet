@@ -1,0 +1,158 @@
+.common-container {
+    background-color: var(--bg-primary);
+    border-radius: 8px;
+    box-shadow: 0 2px 8px var(--shadow-color);
+    padding: 2rem;
+    margin: 1rem;
+    min-height: calc(100vh - 100px);
+    width: 100%;
+}
+
+.common-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--border-color);
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.common-header h1 {
+    font-size: 1.5rem;
+    color: var(--text-primary);
+    margin: 0;
+    font-weight: 600;
+}
+
+.common-header .p-button-rounded {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.activity-form {
+    padding: 1rem;
+}
+
+.activity-form .field {
+    margin-bottom: 1.5rem;
+}
+
+.activity-form .field label {
+    font-weight: 500;
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.dialog-footer {
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.5rem;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border-color);
+}
+
+.action-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.action-buttons .p-button {
+    width: 2rem;
+    height: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+    .common-container {
+        padding: 1rem;
+        margin: 0.5rem;
+    }
+
+    .common-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .common-container {
+        padding: 0.75rem;
+        margin: 0.25rem;
+    }
+
+    .common-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .activity-form .field {
+        margin-bottom: 1rem;
+    }
+
+    .p-calendar, .p-dropdown {
+        width: 100%;
+    }
+}
+
+.p-datatable {
+    margin-top: 1rem;
+    background-color: var(--bg-primary);
+}
+
+.p-dropdown {
+    width: 100%;
+}
+
+.p-calendar {
+    width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .login-card, .register-card {
+        max-width: 90%;
+        padding: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .login-card, .register-card {
+        padding: 1rem;
+    }
+
+    .field {
+        margin-bottom: 1rem;
+    }
+}
+
+.responsive-table {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.p-datatable {
+    min-width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .p-datatable .p-datatable-tbody > tr > td {
+        padding: 0.5rem;
+    }
+    
+    .action-buttons {
+        display: flex;
+        gap: 0.25rem;
+        justify-content: flex-start;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .p-datatable .p-datatable-tbody > tr > td {
+        padding: 0.3rem;
+        font-size: 0.9rem;
+    }
+}
