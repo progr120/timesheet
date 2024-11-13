@@ -98,13 +98,6 @@
 - Personalizzare il tema in `src/styles/Theme.css`
 - Modificare le variabili d'ambiente nel file `.env`
 
-## 🤝 Contributo
-
-Siamo aperti a contributi! Per partecipare:
-1. Fai un fork del repository
-2. Crea un branch per le modifiche
-3. Invia una pull request
-
 ## 📜 Licenza
 
 Questo progetto è distribuito sotto licenza MIT - vedere il file [LICENSE](LICENSE) per i dettagli.
