@@ -94,13 +94,6 @@
    mvn spring-boot:run
    ```
 
-## 🤝 Contributo
-
-Le contribuzioni sono benvenute! Per contribuire:
-1. Fai un fork del repository
-2. Crea un branch per le tue modifiche
-3. Invia una pull request
-
 ## 📜 Licenza
 
 Questo progetto è sotto licenza MIT - vedi il file [LICENSE](LICENSE) per i dettagli.
